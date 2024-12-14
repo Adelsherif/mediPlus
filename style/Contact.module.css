@@ -72,6 +72,7 @@
 @media (max-width:992px) {.contact .fSection .contactForm input,.contactForm select,.contactForm textarea{
     width: 100% !important;
     margin: auto;
+    margin-bottom: 30px;
 }}
 @media (max-width:768px) {
 .contact .fSection .contactForm{
