@@ -1,0 +1,44 @@
+.vip{
+    position: fixed;
+    z-index: 1001;
+}
+.vip .vipContent{
+    position: fixed;
+    right: 0;
+    bottom: 20%;
+    display: flex;
+    align-items: start;
+}
+.vip .vipContent button{
+    background-color: var(--main-color);
+    color: white;
+    font-size: 16px;
+    padding: 10px 10px;
+    border:none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.vip .vipContent .hiddenBox{
+    width: 300px;
+    background-color: white;
+    padding: 30px;
+    line-height: 1.8;
+    margin-right: -300px;
+    transition: all 1s ease;
+}
+.vip .vipContent .box{
+    width: 300px;
+    background-color: white;
+    padding: 30px;
+    line-height: 1.8;
+    margin-right: 0 !important;
+    transition: all 1s ease;
+}
+.vip .vipContent ul li:first-of-type{color: var(--main-color);}
+.vip .vipContent .box button,.hiddenBox button{
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 10px;
+}

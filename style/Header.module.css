@@ -1,0 +1,109 @@
+.header{position: relative;}
+.header .fHead{border-bottom: 1px solid rgb(233, 228, 228);}
+.header  .fHead #innerHeader, .list ul, .toContact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 15px;
+    color: rgb(89, 88, 88);
+}
+.header .fHead #innerHeader  .list ul li{padding: 10px;}
+.header  .fHead #innerHeader .toContact .contact,.email{
+    margin-right: 30px;
+    display: flex;
+}
+.header .fHead #innerHeader  .toContact .contact span:first-of-type,.email span:first-of-type{
+    color: var(--main-color);
+    padding: 2px 4px;
+}
+.header  .lHead{
+    padding-top: 20px;
+    margin-bottom: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: white;
+}
+.header  .lHead #innerHeader,.links ul,.partion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header  .lHead .links .fList > li {
+    padding: 20px 20px;
+    position: relative;
+}
+.header .lHead .links .fList li::before{
+    content: " ";
+    position: absolute;
+    top: 100%;
+    width: 0;
+    height: 3px;
+    transition:  .5s ease;
+    background-color:var(--main-color);
+    border-radius: 5px 5px 0;
+}
+.header  .lHead .links ul li:hover::before{width: 70px;}
+.header  .lHead .links .fList > li {
+    position: relative;
+    background-color: white;
+}
+.header  .lHead .links ul li:hover{color: var(--main-color);}
+.header  .lHead .links .fList li ul{
+    position: absolute;
+    background-color: white;
+    border-left: 3px solid var(--main-color) ;
+    width: 200px !important;
+    margin-top: -10px;
+    z-index: -999;
+    opacity: 0;
+    transition: all.5s ease;
+}
+.header  .lHead .links ul li ul li {
+    padding: 5px 60px 5px 10px;
+    width: 100%;
+    border-bottom: none !important;
+}
+.header  .lHead .links > ul li:hover ul{
+    opacity: 1;
+    margin-top: 20px;
+    z-index: 999;
+}
+.header  .lHead .booking button{
+    padding: 10px 30px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.header  .lHead  .bars{
+    display: none;
+    padding: 20px;
+    font-size: 22px;
+}
+
+@media (max-width:992px){
+    .header  .fHead #innerHeader, .list ul, .toContact {justify-content: center;}
+    .header  .lHead .partion{display: none;}
+    .header  .lHead .responsivePartion{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .header  .lHead .responsivePartion .links .fList{
+        display: block;
+        text-align: center;
+    }
+    .header  .lHead  .bars{display: block;}
+.header  .lHead .booking {text-align: center;}
+.header  .lHead .links .fList li:hover::before{width: 0;}
+.header  .lHead .links ul li ul{
+    line-height: 2;
+    width: 100% !important;
+    left: 50%;
+    border: none !important;
+}
+.header  .lHead .links > ul li:hover ul{margin-top: 0px;}
+}

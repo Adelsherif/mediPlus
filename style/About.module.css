@@ -1,0 +1,48 @@
+.about{margin-top: 60px;}
+.about .aboutContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+.about .aboutContent .aboutText{width: 50%;}
+.about .aboutContent .aboutText p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: var(--gray);
+}
+.about .aboutContent .aboutText .aboutChoises{width: 90%;}
+.about .aboutContent .aboutText .aboutChoises ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 2;
+    color: var(--gray);
+}
+.about .aboutContent .aboutText ul li{width: 50%;}
+.about .aboutContent .aboutText ul li span:first-of-type{
+    color: var(--main-color);
+    margin-right: 15px;
+    padding-top: 5px;
+}
+.about .aboutContent .aboutImage{
+    width: 45%;
+    height: 40%;
+}
+.about .aboutContent .aboutImage img{
+    width: 100%;
+    height: auto;
+    size: 50px;
+    resize: both;
+    overflow: hidden;
+}
+@media (max-width:992px) {
+.about .aboutContent{justify-content: center;}
+.about .aboutContent .aboutText{width: 90%;}
+.about .aboutContent .aboutImage{
+    width: 90%;
+    margin-top: 30px;
+}}

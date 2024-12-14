@@ -1,0 +1,21 @@
+.sponser{
+    margin-top: 60px;
+    background-image: url('../components/sponser/images/client-bg.jpg');
+}
+.sponser .sponserParent{
+    width: 100%;
+    height: 100%;
+    background-color: var(--from-main-color);
+}
+.sponser #sponserContent{
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.sponser #sponserContent .slideBox {
+    width: 70%;
+    margin: auto;
+}
+.sponser #sponserContent .slideBox img{
+    width: 80%; 
+    height: auto;
+}

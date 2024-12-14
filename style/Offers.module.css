@@ -1,0 +1,27 @@
+.offers #offersContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+.offers #offersContent .offerBox{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.offers #offersContent .offerBox .offerIcon{
+    font-size: 45px;
+    color: var(--main-color);
+    margin-right: 30px;
+}
+.offers #offersContent .offerBox p{
+    width: 100%;
+    font-size: 14px;
+    margin-top: 30px;
+    color: var(--gray);
+}
+@media (max-width:992px) {.offers #offersContent .offerBox{width: 48%;}}
+@media (max-width:768px) {.offers #offersContent .offerBox{width: 98%;}}
